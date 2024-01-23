@@ -1,0 +1,41 @@
+/* Styles for Article : questions view page */
+
+.Questions {
+    width: 100%;
+    height: 100%;
+    /* position */
+    position: relative;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Questions > .loading {
+    width: max-content;
+    height: max-content;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.Questions > .loading img {
+    width: 1.5rem;
+}
+
+.questions-list {
+    width: 100%;
+    height: 100%;
+    /* overflow */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 20%;
+}

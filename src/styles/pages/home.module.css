@@ -1,0 +1,115 @@
+/* Styles for home page */
+
+.Home {
+    width: 100%;
+    height: 100%;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .modal {
+    width: 90%;
+    height: max-content;
+    min-height: 90%;
+    /* layout */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.Home .modal > section:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.interesting-articles,
+.favorite-articles {
+    width: 100%;
+    height: 13rem;
+    /* layout */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.interesting-articles .heading,
+.favorite-articles .heading {
+    width: 100%;
+    margin-bottom: 1rem;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.interesting-articles .heading .title,
+.favorite-articles .heading .title {
+    /* layout */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.interesting-articles .heading .title h3,
+.favorite-articles .heading .title h1 {
+    margin-left: 0.4rem;
+}
+.interesting-articles .heading .title h3 {
+    font-weight: 500;
+    text-decoration: 1px solid underline;
+}
+
+.interesting-articles .heading .title > img,
+.favorite-articles .heading .title > img {
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 51%;
+    margin-right: 1rem;
+}
+
+.favorite-articles .heading .search {
+    margin-left: 1rem;
+    background-color: #d9d9d9;
+    border: 1px solid #000000aa;
+    border-radius: 1rem;
+    padding: 0.3rem 0.7rem;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interesting-articles .heading .search input,
+.favorite-articles .heading .search input {
+    height: 1.6rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    direction: rtl;
+}
+
+.interesting-articles .articles-list,
+.favorite-articles .articles-list {
+    width: 100%;
+    height: 11rem;
+    /* layout */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.4rem;
+    /* overflow */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+.interesting-articles .articles-list > *:first-child,
+.favorite-articles .articles-list > *:first-child {
+    margin-left: auto;
+}

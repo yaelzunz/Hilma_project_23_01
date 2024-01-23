@@ -1,0 +1,314 @@
+/* Styles for Signup page */
+
+.Signup {
+    width: 100%;
+    height: 100%;
+    /* position */
+    position: relative;
+    /* layout */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Signup > img {
+    height: 18rem;
+}
+
+.Signup > .modal {
+    width: 48rem;
+    height: 28rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 0 4px #00000044; */
+    margin-bottom: 4rem;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .title {
+    margin-bottom: 1rem;
+}
+.modal .title h1 {
+    text-align: center;
+    color: #2998a7;
+}
+
+.modal form {
+    width: 90%;
+    height: max-content;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* -- old styles -- */
+    padding: 2rem 1rem;
+    box-shadow: 0 0 10px #00000066;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    direction: rtl;
+}
+.modal form .inputs-l,
+.modal form .inputs-r {
+    width: 50%;
+    height: max-content;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal form .input-text {
+    position: relative;
+}
+
+.modal form .input-text .show-input {
+    position: absolute;
+    top: 50%;
+    left: 0.6rem;
+    cursor: pointer;
+}
+
+.modal form .input-select select,
+.modal form .input-text input[type='password'],
+.modal form .input-text input[type='text'] {
+    width: 16rem;
+    height: 1.6rem;
+    border-radius: 0.4rem;
+    /* color: #2998a7; */
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.34) 0%, rgba(217, 217, 217, 0.34) 100%),
+        rgba(217, 217, 217, 0.4);
+    box-shadow: 0 0 4px #00000044;
+    border: none;
+    outline: none;
+    direction: rtl;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+/* .modal form .input-select select {
+  color: #444444bb;
+  width: 17.45rem;
+  height: 2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.2rem;
+} */
+
+.modal form .or {
+    margin: 0.6rem 0;
+    width: 65%;
+    position: relative;
+    background-color: #fff;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal form .or span {
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+    width: 1.5rem;
+}
+
+.modal form .or::after {
+    content: 's';
+    color: transparent;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 1px;
+}
+
+.modal form button.Signupopt-google {
+    border-radius: 0.3rem;
+    border: 1px solid #2998a7;
+    outline: none;
+    margin-top: 0.6rem;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+
+    /* -- ols styles -- */
+    border-radius: 0.3rem;
+    background: transparent;
+    border: 1px solid #2998a7;
+    outline: none;
+    margin-top: 0.6rem;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+
+.modal form button.Signupopt-google span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.modal .links {
+    /* layout */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+    margin: 0.7rem 0;
+}
+
+.modal .links a {
+    color: #444;
+    font-size: 0.65rem;
+    text-decoration: 1px black underline;
+    font-size: 13px;
+}
+
+.modal form input[type='submit'],
+.modal form button.submit {
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.34) 0%, rgba(217, 217, 217, 0.34) 100%),
+        rgba(217, 217, 217, 0.4);
+    outline: none;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    margin: 0.7rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    /* -- old styles -- */
+    background: none;
+    border: 2px solid #1f1818;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #1f1818;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.modal form .input-radio {
+    text-align: center;
+    /* layout*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 0.85rem;
+    margin: 0.8rem 0;
+}
+.modal form .input-radio span {
+    margin-bottom: 0.3rem;
+    font-size: 17px;
+    color: #727171;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal form .input-radio .radio-list {
+    /* layout */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    color: #727171;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal form .input-radio .radio-list label {
+    margin-right: 0.5rem;
+    margin-left: 0.1rem;
+}
+.checkbox-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dropdown-icon {
+    margin-left: 8px;
+}
+
+.checkbox-list {
+    height: 8rem;
+    margin-top: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    direction: ltr;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.checkbox-label:hover {
+    background-color: #e0e0e0;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #222;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.custom-checkbox::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: #222;
+    border-radius: 2px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.checkbox-input:checked + .custom-checkbox::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+button.submit {
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.34) 0%, rgba(217, 217, 217, 0.34) 100%),
+        rgba(217, 217, 217, 0.4);
+    outline: none;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    margin: 0.7rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.msg-err {
+    color: red;
+    font-size: 10px;
+}

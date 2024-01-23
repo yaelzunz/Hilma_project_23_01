@@ -1,0 +1,166 @@
+/* Styles for login page */
+
+.Login {
+    width: 100%;
+    height: 100%;
+    /* layout */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Login > img {
+    height: 18rem;
+}
+
+.Login > .modal {
+    width: 34rem;
+    height: 28rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px #00000044;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal h1 {
+    text-align: center;
+    color: #2998a7;
+    margin: 20px;
+}
+
+.modal form {
+    width: 90%;
+    height: max-content;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* -- old styles -- */
+    padding: 2rem 1rem;
+    box-shadow: 0 0 10px #00000066;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    direction: rtl;
+}
+
+.modal form .input-text {
+    position: relative;
+}
+
+.modal form .input-text .show-input {
+    position: absolute;
+    top: 44%;
+    left: 0.6rem;
+    cursor: pointer;
+}
+
+.modal form .input-text input[type='password'],
+.modal form .input-text input[type='text'] {
+    width: 16rem;
+    height: 1.6rem;
+    border-radius: 0.4rem;
+    color: #2998a7;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.34) 0%, rgba(217, 217, 217, 0.34) 100%),
+        rgba(217, 217, 217, 0.4);
+    box-shadow: 0 0 4px #00000044;
+    border: none;
+    outline: none;
+    direction: rtl;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+.modal form .or {
+    margin: 0.6rem 0;
+    width: 65%;
+    position: relative;
+    background-color: #fff;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal form .or span {
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+    width: 1.5rem;
+}
+
+.modal form .or::after {
+    content: 's';
+    color: transparent;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 1px;
+}
+
+.modal form button.loginopt-google {
+    border-radius: 0.3rem;
+    border: 1px solid #2998a7;
+    outline: none;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+
+    /* -- ols styles -- */
+    border-radius: 0.3rem;
+    background: transparent;
+    border: 1px solid #2998a7;
+    outline: none;
+    margin-block: 0.6rem;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+
+.modal form button.loginopt-google span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.modal .links {
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 0.7rem 0;
+}
+
+.modal .links a {
+    color: #444;
+    font-size: 0.65rem;
+    text-decoration: 1px black underline;
+    font-size: 12px;
+}
+
+.modal .links .signup {
+    color: #2998a7;
+    /* font-size: 11px; */
+}
+
+.modal form input[type='submit'] {
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.34) 0%, rgba(217, 217, 217, 0.34) 100%),
+        rgba(217, 217, 217, 0.4);
+    outline: none;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    margin: 0.7rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}

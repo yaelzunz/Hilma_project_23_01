@@ -1,0 +1,19 @@
+/* Styles for btn-go-bak component */
+
+button.go-back {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    /* background */
+    background-color: transparent;
+    border: 1px solid #111;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    /* position */
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

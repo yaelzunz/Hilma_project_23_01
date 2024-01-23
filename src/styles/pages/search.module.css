@@ -1,0 +1,153 @@
+.container {
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 1.6rem 5rem;
+}
+
+.form {
+    width: 100%;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    gap: 2.6rem;
+}
+
+.form .input-search {
+    background-color: #d9d9d9;
+    border: 1px solid #000000aa;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+}
+
+.form .input-search input {
+    height: 1.6rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.form button.submit {
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* articles list group */
+
+.articles-list-group {
+    width: 100%;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.articles-list-group .articles-list {
+    width: 100%;
+    /* layout */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.articles-list-group .articles-list > * {
+    margin-bottom: 0.4rem;
+}
+
+/* Styles for home page */
+
+.interesting-articles {
+    width: 100%;
+    height: 13rem;
+    /* layout */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.interesting-articles .heading {
+    width: 100%;
+    margin-bottom: 1rem;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.interesting-articles .heading .title {
+    /* layout */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.interesting-articles .heading .title h3 {
+    margin-left: 0.4rem;
+}
+.interesting-articles .heading .title h3 {
+    font-weight: 500;
+    text-decoration: 1px solid underline;
+}
+ {
+    margin-left: 1rem;
+    background-color: #d9d9d9;
+    border: 1px solid #000000aa;
+    border-radius: 1rem;
+    padding: 0.3rem 0.7rem;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interesting-articles .heading .search input {
+    height: 1.6rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    direction: rtl;
+}
+
+.interesting-articles .articles-list {
+    width: 100%;
+    height: 11rem;
+    /* layout */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.4rem;
+    /* overflow */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+.interesting-articles .articles-list > *:first-child {
+    margin-left: auto;
+}

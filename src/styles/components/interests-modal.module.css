@@ -1,0 +1,185 @@
+/* Styles for interests-modal */
+
+.modal-interests-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    /* position */
+    position: fixed;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* hide interests modal whennot relevant */
+.modal-interests-wrapper.hide {
+    display: none;
+}
+
+.modal-interests-wrapper .modal-interests {
+    width: 40rem;
+    height: 28rem;
+    background: linear-gradient(
+        to bottom,
+        #2ea5b0bb,
+        #ffffffdd,
+        #ffffffdd,
+        #ffffffee,
+        #ffffff,
+        #ffffff
+    );
+    border-radius: 1rem;
+    /* position */
+    position: relative;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    /* vars */
+    --interests-header-height: 33%;
+}
+
+.modal-interests-wrapper .modal-interests > .header {
+    width: 100%;
+    height: var(--interests-header-height);
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    /* text */
+    font-size: 0.8rem;
+    color: #088;
+}
+
+.modal-interests-wrapper .modal-interests > .header p {
+    /* text */
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.modal-interests-wrapper .modal-interests > .header img {
+    margin-bottom: 1rem;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* topics list */
+
+.modal-interests-wrapper .modal-interests > .body {
+    width: 100%;
+    height: calc(100% - 3rem - var(--interests-header-height));
+    /* layout */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* body : topics list */
+
+.modal-interests-wrapper .modal-interests .body .topics-list {
+    width: 82%;
+    height: max-content;
+    max-height: 70%;
+    overflow-y: auto;
+    /* layout */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.modal-interests-wrapper
+    .modal-interests
+    .body
+    .topics-list
+    .interest-checkbox {
+    width: 6rem;
+    height: 5rem;
+    border: 1px solid #00000022;
+    border-radius: 0.4rem;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text */
+    font-size: 0.75rem;
+    cursor: pointer;
+    /* animate */
+    transition: border-color 0.2s ease;
+}
+
+/* selected checkbox */
+.modal-interests-wrapper
+    .modal-interests
+    .body
+    .topics-list
+    .interest-checkbox.selected {
+    border: 2px solid #088;
+}
+
+.modal-interests-wrapper
+    .modal-interests
+    .body
+    .topics-list
+    .interest-checkbox
+    input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* body : difficulty */
+
+.modal-interests-wrapper .modal-interests .body .difficulty {
+    width: 82%;
+    height: max-content;
+    max-height: 70%;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+}
+
+.modal-interests-wrapper .modal-interests .body .difficulty input {
+    margin-left: 0.4rem;
+}
+
+.modal-interests-wrapper .modal-interests .btns {
+    width: 100%;
+    height: 3rem;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.modal-interests-wrapper .modal-interests .btns button {
+    background-color: #088;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    padding: 0.3rem 4rem;
+    /* text */
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.modal-interests-wrapper .modal-interests .btns button.back {
+    background-color: #aaa;
+}

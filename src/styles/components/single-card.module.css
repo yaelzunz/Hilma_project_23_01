@@ -1,0 +1,71 @@
+/* Styles for memory-game : card component */
+
+.card {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* position */
+    position: relative;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* vars */
+    --transition-duration: 0.3s;
+}
+
+.card img.overlay {
+    width: 100%;
+    height: 100%;
+    /* position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* animate */
+    transition: all var(--transition-duration) var(--transition-duration) ease-out;
+}
+
+.card .content {
+    width: 100%;
+    height: 100%;
+    /* background */
+    background-color: #fbba36;
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* style */
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    /* animate */
+    transition: all var(--transition-duration) ease-in;
+    /* init props */
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+
+.card .content span {
+    /* text */
+    font-size: 1rem;
+    color: #111;
+    text-align: center;
+}
+
+/* on active */
+
+.card.active img.overlay {
+    /* scale 90deg on x */
+    transform: rotateY(90deg);
+    /* change transition setting */
+    transition: all var(--transition-duration) ease-in;
+}
+
+.card.active .content {
+    transform: rotateY(0deg);
+    opacity: 1;
+    /* change transition setting */
+    transition: all var(--transition-duration) var(--transition-duration) ease-out;
+}
